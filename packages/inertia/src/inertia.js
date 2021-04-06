@@ -321,8 +321,8 @@ export default {
           if (!replace) {
             fireNavigateEvent(page)
           }
-          if (Array.isArray(this.page.asyncPropsToLoad) && this.page.asyncPropsToLoad.length) {
-            this.reload({ only: this.page.asyncPropsToLoad});
+          if (Array.isArray(page.asyncPropsToLoad) && page.asyncPropsToLoad.length) {
+            this.reload({ only: page.asyncPropsToLoad});
           }
         })
       }
